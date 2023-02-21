@@ -19,7 +19,7 @@ public class UserProfile
     private String userID;//the userID
     private String genre;// the user's preferred genre of movie
     private String[] genres = {"Comedy", "Drama", "Action", "Mystery"};//available genres of movies
-    
+
     /**
      * A constructor that takes in the userID and the favourite genre
      * @param givenID the ID to assign to this user
@@ -30,6 +30,8 @@ public class UserProfile
         userID = givenID;
         genre= givenGenre;
     }
+    
+    public UserProfile() { }
 
     /**
      * A getter for the userID
@@ -60,9 +62,5 @@ public class UserProfile
     public void setGenre(String genre) {
         this.genre = genre;
     }
-    
-    
-    
-    
-    
+
 }//end class
